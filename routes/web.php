@@ -14,5 +14,33 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/index', function () {
+    return view('index');
+});
+
+Route::get('/repairs', function () {
+    return view('repairs');
+});
+
+Route::get('/draiver', function () {
+    return view('draiver');
+});
+
+Route::get('/downwin', function () {
+    return view('downwin');
+});
+
+Route::get('/cost', function () {
+    return view('cost');
+});
+
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
+Route::get('/cleaning', function () {
+    return view('cleaning');
 });
